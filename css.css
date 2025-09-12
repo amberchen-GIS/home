@@ -79,6 +79,8 @@ h1{
     font-size: 42px;
     text-transform: uppercase;
 
+    white-space: nowrap;
+
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
@@ -334,5 +336,8 @@ hr {
         display: none;
     }
 
+    h1{
+        white-space: normal;
+    }
 
 }
