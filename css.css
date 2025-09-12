@@ -274,6 +274,8 @@ hr {
 .stat_map_view{
     width: 100vw;
     height: auto;
+
+    margin-right: 20px;
 }
 
 .interact_wrapper{
