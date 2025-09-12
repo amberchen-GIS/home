@@ -209,7 +209,8 @@ hr {
 .bio{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
+    align-items: flex-start;
 
     margin-right: 20px;
     margin-left: 20px;
@@ -226,6 +227,7 @@ hr {
 .photo_prof{
     width: 20vw;
     height: auto;
+    object-fit: contain;
 
     margin-top: 0px;
     margin-bottom: 0px;
