@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber Chen</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@100;200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="background">
+
+    <header>
+
+        <section class="left">
+            <h1>AMBER CHEN</h1>
+            <a href="#map1">MAP 1</a>
+            <a href="#map2">MAP 2</a>
+            <a href="#bio">BIO</a>
+        </section>
+
+        <section class="right">
+            <a href="http://www.linkedin.com/in/amberbchen" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="resume.pdf" target="_blank">Resume</a>
+        </section>
+        
+    </header>
+
+    <hr>
+
+    <section id="map1" class="map">
+
+        <section class = "mapinfo">
+            <h2>Zion National Park Static Map</h2>
+            <a href="view.html?image=mp1.jpg" class = "h3link">View</a>
+            <h3>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike.</h3>
+        </section class = "mapinfo">
+
+        <img src="mp1.jpg" alt="Image" class="stat_map">
+
+        <section class = "mapinfo">
+            <h3>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike.</h3>
+        </section class = "mapinfo">
+
+    </section>
+
+    <hr>
+
+    <section id="map2" class="map">
+
+        <section class = "mapinfo">
+            <h2>Zion National Park Interactive Map</h2>
+            <h3>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike.</h3>
+        </section class = "mapinfo">
+
+        <section class="interact_wrapper">
+            <script type="module" src="https://js.arcgis.com/embeddable-components/4.33/arcgis-embeddable-components.esm.js"></script>
+            <arcgis-embedded-map style="height:80vh; width:75vw;" item-id="7557e619f50c4ac582fb3a61a9206833" theme="light" center="-77.03568367781148,38.92454565297365"scale="72223.819286" portal-url="https://gisucla.maps.arcgis.com" ></arcgis-embedded-map>
+        </section>
+
+    </section>
+
+    <hr>
+
+    <section id="bio" class="bio">
+
+        <img src="profile.jpg" alt="Image" class="photo_prof">
+        
+        <section class = "mapinfo">
+            <h2>About Me</h2>
+            <h3>Jerome Allen Seinfeld (/ˈsaɪnfɛld/ SYNE-feld; born April 29, 1954) 
+                is an American stand-up comedian, actor, writer, filmmaker, and television 
+                producer specializing in observational comedy. Seinfeld gained stardom playing 
+                a semi-fictionalized version of himself in the NBC sitcom Seinfeld (1989–1998), 
+                which he co-created and wrote with Larry David. Seinfeld earned a Golden Globe 
+                Award for Best Actor – Television Series Musical or Comedy in 1995. The show 
+                is one of the most acclaimed and popular sitcoms of all time.
+                </h3>
+        </section>
+
+
+    </section>
+
+    <footer>
+        <section class="left">
+            <h1>AMBER CHEN</h1>
+            <a href="http://www.linkedin.com/in/amberbchen" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="resume.pdf" target="_blank">Resume</a>
+            <a href="ESRI.pdf" target="_blank">ESRI Trainings</a>
+        </section>
+
+        <section class="right">
+            <h4>© 2025 Amber Chen</h4>
+        </section>
+    </footer>
+</div>
+</body>
