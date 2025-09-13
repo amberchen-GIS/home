@@ -104,13 +104,13 @@
 
         <section class = "mapinfo">
             <h2>Zion National Park Interactive Map</h2>
-             <a href="view_interactive.html" class = "h3link">View in ESRI Map Viewer</a>
+             <a href="view_interactive.html" class = "h3link">View Interactive Map</a>
             <h3>Check out an interactive version of my Zion National Park map here!<br><br>
 
             Zoom in and out, pan to neighboring towns, and click on park features to
              learn more about them! All features have been updated individually to 
              show pertinent information in their pop-ups. <br><br>
-             
+
             To view my map legend, click the info box in the top left corner. To view map 
             layers and explore more, click the pop-out icon in the bottom right corner to 
             take you to ESRI’s map viewer.</h3>
@@ -224,7 +224,6 @@
 <script>
   gsap.registerPlugin(ScrollTrigger);
 
-  // Fade in header on load (slower)
   gsap.from("header", {
     duration: 2,
     y: -50,
@@ -232,7 +231,6 @@
     ease: "power1.out"
   });
 
-  // Fade/slide in sections as you scroll (slower + softer easing)
   gsap.utils.toArray("section.map, section.bio").forEach((sec) => {
     gsap.from(sec, {
       scrollTrigger: {
@@ -247,7 +245,7 @@
     });
   });
 
-  // Animate footer when it comes into view (slower)
+
   gsap.from("footer", {
     scrollTrigger: {
       trigger: "footer",
@@ -259,7 +257,7 @@
     ease: "power1.out"
   });
 
-  // Hover effect (keep snappy so it feels responsive)
+
   gsap.utils.toArray("a").forEach(link => {
     link.addEventListener("mouseenter", () => {
       gsap.to(link, { scale: 1.1, duration: 0.4, ease: "power2.out" });
@@ -268,6 +266,7 @@
       gsap.to(link, { scale: 1, duration: 0.4, ease: "power2.out" });
     });
   });
+
 </script>
 
 
