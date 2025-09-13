@@ -257,7 +257,7 @@ hr {
 }
 
 .photo_prof{
-    width: auto;
+    height: auto;
     object-fit: contain;
 
     margin-top: 15px;
