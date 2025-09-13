@@ -254,7 +254,6 @@ hr {
 .profile{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
 }
 
 .photo_prof{
@@ -365,6 +364,8 @@ hr {
 
     .bio{
         margin-left: 0px;
+        display: flex;
+        align-items: stretch;
     }
 
     .interact_wrapper{
