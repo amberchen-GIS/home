@@ -225,7 +225,7 @@ hr {
 }
 
 .bioinfo{
-    height: 40vh
+    flex: 1;
 
     margin-top: 0px;
     margin-bottom: 0px;
@@ -241,17 +241,19 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
 
     margin-right: 20px;
     margin-left: 20px;
 
     margin-bottom: 20px;
+
+    height: 30vh;
 }
 
 
 .photo_prof{
-    height: 30vh;
+    height: 100%;
     object-fit: contain;
 
     margin-top: 15px;
