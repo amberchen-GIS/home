@@ -231,5 +231,54 @@
     </footer>
 </div>
 
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Fade in header on load (slower)
+  gsap.from("header", {
+    duration: 2,
+    y: -50,
+    opacity: 0,
+    ease: "power1.out"
+  });
+
+  // Fade/slide in sections as you scroll (slower + softer easing)
+  gsap.utils.toArray("section.map, section.bio").forEach((sec) => {
+    gsap.from(sec, {
+      scrollTrigger: {
+        trigger: sec,
+        start: "top 85%",
+        toggleActions: "play none none reverse"
+      },
+      y: 40,
+      opacity: 0,
+      duration: 1.5,
+      ease: "power1.out"
+    });
+  });
+
+  // Animate footer when it comes into view (slower)
+  gsap.from("footer", {
+    scrollTrigger: {
+      trigger: "footer",
+      start: "top 90%"
+    },
+    y: 50,
+    opacity: 0,
+    duration: 2,
+    ease: "power1.out"
+  });
+
+  // Hover effect (keep snappy so it feels responsive)
+  gsap.utils.toArray("a").forEach(link => {
+    link.addEventListener("mouseenter", () => {
+      gsap.to(link, { scale: 1.1, duration: 0.4, ease: "power2.out" });
+    });
+    link.addEventListener("mouseleave", () => {
+      gsap.to(link, { scale: 1, duration: 0.4, ease: "power2.out" });
+    });
+  });
+</script>
+
 
 </body>
