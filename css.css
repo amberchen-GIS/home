@@ -254,11 +254,11 @@ hr {
 .profile{
     display: flex;
     flex-direction: row;
+    align-items: stretch;
 }
 
 .photo_prof{
-    width: 24vw;
-    height: auto;
+    width: auto;
     object-fit: contain;
 
     margin-top: 15px;
