@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@100;200&display=swap" rel="stylesheet">
 </head>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
 <body>
 <div class="background">
 
@@ -37,14 +42,44 @@
         <section class = "mapinfo">
             <h2>Zion National Park Static Map</h2>
             <a href="view.html?image=mp9.jpg" class = "h3link">View Zion</a>
-            <h3>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike.</h3>
+            <h3>
+            Map Symbology & Labeling Choices
+            <br><br>
+            My map’s main color scheme consists of shades of red, brown, and orange 
+            to match Zion National Park’s natural landscape. To improve overall 
+            readability, I diversified the map’s point symbology and differentiated 
+            various types of features from one another. By implementing more intuitively 
+            understood symbols, I believe my new map conveys information to visitors 
+            more efficiently than its predecessor.
+            <br><br>
+            Previously, the parking lot icon for NPS maps was a small half-circle that 
+            was barely visible among all of the other features.  
+            </h3>
         </section class = "mapinfo">
 
         <img src="mp9.jpg" alt="Image" class="stat_map">
 
         <section class = "mapinfo">
-            <h3>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike.</h3>
-        </section class = "mapinfo">
+        <h3>
+            To make it more prominent, 
+            I changed the icon to a white square with the letter “P,” which is commonly 
+            understood to be the parking symbol. This makes parking information easily 
+            accessible at a glance.
+            <br><br>
+            I also decided to make trailheads more prominent, by symbolizing them with 
+            brown diamonds. This makes them easy to spot for visitors seeking hiking routes, 
+            while preserving visual hierarchy. The diamonds are larger than the small, 
+            half-circle dots in the NPS map, but their muted brown color prevents them from 
+            overpowering other features.
+            <br><br>
+            For Zion’s surrounding areas, I symbolized towns with semi-transparent polygons 
+            to show their extents, offering more geographic context than the NPS point symbols. 
+            I omitted town elevation labels, which felt unnecessary for this map’s purpose. 
+            For significant elevation points, I replaced NPS’ small dots with triangles, a 
+            shape more intuitively associated with mountains.
+        </h3>
+        </section>
+
 
     </section>
 
@@ -54,6 +89,7 @@
 
         <section class = "mapinfo">
             <h2>Zion National Park Interactive Map</h2>
+             <a href="view_interactive.html" class = "h3link">View in ESRI Map Viewer</a>
             <h3>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading hike.</h3>
         </section class = "mapinfo">
         
@@ -109,12 +145,23 @@
     <section id="map4" class="map">
         <section class = "mapinfo">
             <h2>San Diego Median Housing Values Map</h2>
-            <a href="view.html?image=mp5.png" class = "h3link">View Highways in Southern California's South Bay</a>
+            <a href="view.html?image=mp5.png" class = "h3link">View Equal Interval Map</a>
+            <h3>Equal Interval divides the range of prices into evenly sized value intervals. While this method is easy to understand, it glosses over some of the smaller variations within my data and ignores pricing clusters that otherwise fall in unequal categories. That being said, this distribution still does a good job of illustrating the most general patterns within the data, such as where counties with more high-value homes are located (e.g. La Jolla and Rancho Bernardo, which lies east of Del Mar).</h3>
         </section>
         <img src="mp5.png" alt="Image" class="stat_map">
 
         <section class = "mapinfo">
-            <a href="view.html?image=mp6.png" class = "h3link">View Highways in Southern California's South Bay</a>
+            <a href="view.html?image=mp6.png" class = "h3link">View Quantile Map</a>
+            <h3>Quantile ensures an equal number of tracts in each class, which
+                 evenly distributes colors across the map. However, one downside
+                  is that it may place some tracts with similar values into
+                   different classes (or vice versa – place tracts with different
+                    values into the same class), which can distort and exaggerate 
+                    our perception of actual price differences. In this instance, 
+                    the quantile classification decreases the price range of the 
+                    class with the second-lowest values just to even out the number 
+                    of tracts in that class in comparison to the other classes. 
+                    This potentially misleads our interpretation of that class.</h3>
         </section>
         <img src="mp6.png" alt="Image" class="stat_map">
 
@@ -122,12 +169,25 @@
 
     <section id="map4" class="map">
         <section class = "mapinfo">
-            <a href="view.html?image=mp7.png" class = "h3link">View Highways in Southern California's South Bay</a>
+            <a href="view.html?image=mp7.png" class = "h3link">View Natural Breaks Map</a>
+            <h3>Natural Breaks groups tracts by natural gaps in the data, producing classes
+                 that reflect real clusters of values. Its grouping method captures meaningful 
+                 differences between housing prices, thus avoiding the issues that Equal Interval 
+                 and Quantile introduce. I think Natural Breaks best represents my dataset 
+                 because the classes accurately represent real housing value patterns and allow us 
+                 to spatially visualize overall high and lower value areas, without sacrificing 
+                 accurate representation of the variation within the data.</h3>
         </section>
         <img src="mp7.png" alt="Image" class="stat_map">
 
         <section class = "mapinfo">
-            <a href="view.html?image=mp8.png" class = "h3link">View Highways in Southern California's South Bay</a>
+            <a href="view.html?image=mp8.png" class = "h3link">View Standard Deviation Map</a>
+            <h3>Standard Deviation measures how far values deviate from the mean, so I chose a 
+                diverging color scheme to better illustrate this method’s purpose. This method 
+                strongly emphasizes a few extremely high-value tracts but compresses the 
+                differences among the majority of tracts, which can visually exaggerate high-value 
+                outliers. Also, since I chose to stick with 5 classes for consistency across my maps, 
+                the standard deviation values were a little hard to read.</h3>
         </section>
         <img src="mp8.png" alt="Image" class="stat_map">
         
@@ -135,20 +195,31 @@
 
     <hr>
 
-
     <section id="bio" class="bio">
 
         <img src="profile.jpg" alt="Image" class="photo_prof">
         
-        <section class = "mapinfo">
+        <section class = "bioinfo">
             <h2>About Me</h2>
-            <h3>Jerome Allen Seinfeld (/ˈsaɪnfɛld/ SYNE-feld; born April 29, 1954) 
-                is an American stand-up comedian, actor, writer, filmmaker, and television 
-                producer specializing in observational comedy. Seinfeld gained stardom playing 
-                a semi-fictionalized version of himself in the NBC sitcom Seinfeld (1989–1998), 
-                which he co-created and wrote with Larry David. Seinfeld earned a Golden Globe 
-                Award for Best Actor – Television Series Musical or Comedy in 1995. The show 
-                is one of the most acclaimed and popular sitcoms of all time.
+            <h3>Hey there! I’m Amber, an undergraduate student majoring in Geography 
+                and double-minoring in GIS&T and English at UCLA. My research interests 
+                span several topics, including water and air quality in Los Angeles, 
+                especially in the aftermath of LA’s January 2025 wildfires. I am also 
+                highly interested in population data, both in Los Angeles and across Asia, 
+                with a particular focus on China, Taiwan, and Tibet.
+                <br><br>
+                I have academic experience in using QGIS, ArcGIS, and SQL for cartography. 
+                Some of my other skills include designing with Adobe InDesign, applying R in 
+                statistical research, and performing data analysis with Microsoft Excel. In 
+                the summer before my sophomore year, I interned with Asian Americans Advancing 
+                Justice – Atlanta. I gained hands-on experience with data analysis as I worked 
+                with large demographic datasets from the U.S. Census Bureau and the Georgia 
+                Secretary of State.
+                <br><br>
+                Outside of school, I often volunteer or tutor children and adults in English. 
+                My passion lies in helping others learn — whether through language or academic 
+                research. As a GIS&T scholar, I am eager to share the potential of this emerging 
+                field and inspire others to explore it.
                 </h3>
         </section>
 
@@ -168,4 +239,6 @@
         </section>
     </footer>
 </div>
+
+
 </body>
