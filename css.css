@@ -184,6 +184,9 @@ hr {
 
 .stat_map{
 
+    position: sticky;
+    top: 20px;
+
     border: none;
     outline: none;
 
@@ -198,18 +201,6 @@ hr {
     height: 70vh;
 }
 
-.map_stk{
-    position: sticky;
-    top: 0;
-
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: 10px;
-
-    width: auto;
-    height: 95vh;
-}
 
 
 .mapinfo{
