@@ -335,7 +335,7 @@ hr {
     }
 
     header{
-        height: 35vh;
+        height: 50vh;
         justify-content: flex-start; 
         align-items: flex-start;
     }
@@ -346,6 +346,7 @@ hr {
 
     .map{
         margin-left: 0px;
+        flex-direction: column;
     }
 
     .bio{
