@@ -332,21 +332,25 @@ hr {
 
     .photo_prof{
         display: normal;
-        height: auto;
-        width: 90vw;
 
-        margin-bottom: 5vh;
+        height: 95vw;
+        width: 95vw;
 
+        object-fit: cover;
+
+        border: 0;
+        margin: 0;
     }
 
     header{
-        height: 15vh;
+        height: 30vh;
         justify-content: flex-start; 
         align-items: flex-start;
     }
 
     .mapinfo{
         width: 100vw;
+        margin-right: 5vw;
     }
 
     .map{
@@ -362,6 +366,12 @@ hr {
         flex-direction: column;
 
     }
+
+    .bioinfo{
+        margin-right: 0vw;
+
+    }
+
 
     .interact_wrapper{
         display: none;
