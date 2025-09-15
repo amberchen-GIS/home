@@ -6,7 +6,7 @@
 
 
 body{
-    background-color: rgb(220, 236, 226);
+    background-color: rgb(228, 238, 232);
 
     display: flex;
     flex-direction: column;
@@ -302,7 +302,16 @@ hr {
 #zion1{
     display: none;
     margin: 0;
-    
+}
+
+#urban1{
+    display: none;
+    margin: 0;
+}
+
+#uq1{
+    display: none;
+    margin: 0;
 }
 
 /*MOBILE UPDATAES*/
@@ -318,6 +327,28 @@ hr {
         margin-right: auto;
         margin-bottom: 5vh;
     }
+
+    #urban1{
+        display: block;
+        width: 95vw;
+        height: auto;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
+    }
+
+    #qu1{
+        display: block;
+        width: 95vw;
+        height: auto;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
+    }
+
+    
 
     footer{
         height: 30vh;
