@@ -331,11 +331,16 @@ hr {
     }
 
     .photo_prof{
-        display: none;
+        display: normal;
+        height: auto;
+        width: 90vw;
+
+        margin-bottom: 5vh;
+
     }
 
     header{
-        height: 50vh;
+        height: 15vh;
         justify-content: flex-start; 
         align-items: flex-start;
     }
@@ -353,6 +358,9 @@ hr {
         margin-left: 0px;
         display: flex;
         align-items: stretch;
+
+        flex-direction: column;
+
     }
 
     .interact_wrapper{
@@ -361,6 +369,10 @@ hr {
 
     h1{
         white-space: normal;
+    }
+
+    #hdr_links{
+        display: none;
     }
 
 }
