@@ -313,9 +313,8 @@ hr {
         align-items: flex-start;  
 
         flex-direction: column;
-
-        height: 100px; 
-        width: 50vw;
+        width: 100vw;
+        height: auto;
     }
 
     a{
@@ -328,24 +327,43 @@ hr {
 
     .right{
         display: none;
+        width: 0vw;
+        padding: 0;
+        margin: 0;
     }
 
     .photo_prof{
         display: normal;
 
-        height: 95vw;
-        width: 95vw;
+        padding: 0;
+        margin: 0;
+
+        height: 90vw;
+        width: 90vw;
+
 
         object-fit: cover;
-
-        border: 0;
-        margin: 0;
     }
 
     header{
-        height: 30vh;
+        width: 100vw;
+        height: auto;
         justify-content: flex-start; 
         align-items: flex-start;
+    }
+
+    h1{
+        font-size: 10vw;
+        margin-bottom: 0vh;
+    }
+
+    h2{
+        margin-top: 5vh;
+    }
+
+
+    .right{
+        width: 0vw;
     }
 
     .mapinfo{
@@ -359,9 +377,10 @@ hr {
     }
 
     .bio{
-        margin-left: 0px;
+        margin: 0;
+
         display: flex;
-        align-items: stretch;
+        align-items: center;
 
         flex-direction: column;
 
@@ -375,10 +394,6 @@ hr {
 
     .interact_wrapper{
         display: none;
-    }
-
-    h1{
-        white-space: normal;
     }
 
     #hdr_links{
