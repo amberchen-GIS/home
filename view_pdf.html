@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@100;200&display=swap" rel="stylesheet">
+</head>
+
+
+<section class="back">
+    <a class = back_btn onclick="window.history.back()">&laquo;</a>
+</section>
+
+<section id="map1" class="view">
+    <iframe id="dynamicPDF" class="stat_map_view" style="height: 99%;"></iframe>
+</section>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const fileName = params.get('file');
+
+    const pdfElement = document.getElementById('dynamicPDF');
+    if (fileName) {
+        pdfElement.src = fileName;
+    } else {
+        pdfElement.innerHTML = "No file specified";
+    }
+</script>
