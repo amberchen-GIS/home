@@ -385,13 +385,13 @@ hr {
 
         padding: 0;
         margin: 0;
-        padding-top: 20vh;
 
         height: 90vw;
         width: 90vw;
 
 
         object-fit: cover;
+        object-position: center 60%;
     }
 
     header{
