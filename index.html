@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amber Chen</title>
     <link rel="stylesheet" href="css.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@100;200&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Datatype:wght@100..900&display=swap" rel="stylesheet">
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -17,23 +19,21 @@
     <header>
 
         <section class="left">
-            <h1>AMBER CHEN</h1>
-            <a id = "hdr_links" style = "white-space: nowrap;" href="#bio">BIO</a>
-            <a id = "hdr_links" style = "white-space: nowrap;" href="#map1">MAP 1</a>
-            <a id = "hdr_links" style = "white-space: nowrap;" href="#map2">MAP 2</a>
-            <a id = "hdr_links" style = "white-space: nowrap;" href="#map3">MAP 3</a>
-            <a id = "hdr_links" style = "white-space: nowrap;" href="#map4">MAP 4</a>
-            
+            <h1>AMBER CHEN</h1>  
         </section>
 
         <section class="right">
             <a href="http://www.linkedin.com/in/amberbchen" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="resume.pdf" target="_blank">Resume</a>
+            <a href="Amber_Chen_Rec_2026.pdf" target="_blank">Reference</a>
         </section>
+
+        
         
     </header>
 
-        <hr>
+    <hr>
+
 
     <section id="bio" class="bio">
 
@@ -70,6 +70,51 @@
         </section>
     </section>
 
+    <hr>
+
+    <section id="map0" class="map">
+        <section  style = "width: auto" class = "mapinfo">
+            <h2>NDVI Change in the San Joaquin Valley, 2005-2020</h2>
+            <a href="https://sites.google.com/view/sanjoaquinvalley-uclagis/home" target="_blank" class = "h3link">See Project Website</a>
+            <img id = "zion1" src="sanjoav.jpeg" alt="Image" >
+            <h3>
+            In this project, I used ENVI and ArcGIS Pro to study agricultural cropping changes in the San Joaquin Valley. 
+            I first downloaded Landsat ARD Surface Reflectance imagery from August of 2005 and 2020. Next, I utilized ENVI 
+            to mosaic multiple images from each year, and calculated the Normalized Vegetation Index (NDVI) for the areas 
+            that overlapped between the resulting mosaicked images.  
+            <br><br>
+            Then, my research team applied an unsupervised classification in ENVI to identify different crop types, focusing 
+            particularly on tree crops to determine how the valley's crop types have changed over time. Lastly, I compared our
+            results to existing USGS research on the Central Valley's crop distribution—displayed on the left—which supported 
+            our findings.
+            <br><br>
+            The USGS data—in the form of 321,894 polygons, each representing individual fields—were published in 2024 to determine
+             cropping trends and patterns in the Central Valley. We mapped the entire dataset in ArcGIS Pro, then narrowed in on
+             our study area in the southern end of the San Joaquin Valley.
+            <br><br>
+            Here, our main point of interest are the black parcels, which represent all tree crops. Note that I combined the
+             original dataset's "Citrus & Mediterranean Crop Type" and "Deciduous Fruit & Nut Crop Type" categories to create
+              our very own "Tree Types" category. My remaining five categories—Field Crops, Grain Crops, Pasture Crops, 
+              Truck/Nursery/Berry Crops, and Vineyard crops—were also created from combining multiple related USGS classes, for 
+              the sake of simplicity.
+            <br><br>
+            From this map, we observed that tree crops increased significantly in the southern part and the northeastern 
+            (or general northern side) of our study area from 2005 to 2020, paralleling the results from our earlier unsupervised 
+            classification.
+            <br><br>
+            A statistical breakdown of crop type percentage by year revealed that the increase in tree crops became more pronounced
+             the further south we fixated our area of analysis: +8% in the Central Valley, +11% in the San Joaquin Valley, and +24% 
+             in our study area.
+             <br><br>
+             Ultimately, our study area is a dramatic representation of the patterns in the greater San Joaquin Valley. Additionally, 
+             since water stress usually hits the San Joaquin Valley first, the area is in turn a good predictor of what trends will 
+             sweep over the entire Central Valley once water stress becomes ubiquitous across the region. Overall, the data demonstrate 
+             that Central California's response to water stress is to increase the proportion of tree crops relative to other crops.
+            </h3>
+        </section class = "mapinfo">
+
+        <img style = "height: 95vh; margin-left: auto; margin-right: auto;" src="sanjoav.jpeg" alt="Image" class="stat_map">
+    </section>
     <hr>
 
     <section id="map0" class="map">
